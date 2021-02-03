@@ -1,0 +1,15 @@
+package test.inberitance;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A obj1 = new A();
+		B obj2 = new B();
+		obj1.i++;
+		obj1.print_i();
+		obj2.i++;
+		obj2.print_i();
+	}
+
+}

@@ -1,0 +1,10 @@
+package test.inberitance;
+
+public class A {
+
+	public int i = 15;
+	
+	public void print_i () {
+		System.out.println(i);
+	}
+}

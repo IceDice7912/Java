@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.awt.Button"/>
+<fullyQualifiedTypeName name="java.awt.Frame"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="test2_operator.Calculator"/>
+<fullyQualifiedTypeName name="java.nio.charset.MalformedInputException"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="my.fly.Animal"/>
+<fullyQualifiedTypeName name="my.fly.Human"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="javafx.scene.effect.Light.Distant"/>
+<fullyQualifiedTypeName name="my.fly.Vehicle"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="my.fly.Airplane"/>
+</qualifiedTypeNameHistroy>

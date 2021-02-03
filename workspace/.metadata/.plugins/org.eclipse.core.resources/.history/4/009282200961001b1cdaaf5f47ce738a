@@ -1,0 +1,26 @@
+package test1;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyProfile m1 = new MyProfile();
+		m1.name = "전은수";
+		m1.age = 32;
+		m1.tall = 160.5;
+		m1.gender = '여';
+		m1.isPretty = true;
+		System.out.println(m1);
+		System.out.println(m1.name);
+		
+		MyProfile m2 = new MyProfile();
+		m2.name = "홍길동";
+		m2.age = 23;
+		m2.tall = 260.5;
+		m2.gender = '남';
+		m2.isPretty = false;
+		System.out.println(m2);
+		System.out.println(m2.name);
+	}
+
+}

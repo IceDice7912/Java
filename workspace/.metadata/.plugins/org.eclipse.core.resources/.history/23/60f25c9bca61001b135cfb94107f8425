@@ -1,0 +1,14 @@
+package test.multi.array;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int all[][] = new int [3][2];
+		System.out.println(all);
+		System.out.println(all[0]);
+		System.out.println(all[1]);
+		System.out.println(all[2]);
+	}
+
+}

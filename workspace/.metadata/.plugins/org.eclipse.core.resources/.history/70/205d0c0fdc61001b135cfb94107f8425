@@ -1,0 +1,11 @@
+package test_encapsulation;
+
+public class MyDate {
+	private int year, month, day;
+
+	void setYear(int newyear, int newmonth, int newday) {
+		year=newyear;
+		month=newmonth;
+		day=newday;
+	}
+}

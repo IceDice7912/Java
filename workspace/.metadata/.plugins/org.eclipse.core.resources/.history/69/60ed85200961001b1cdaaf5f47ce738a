@@ -1,0 +1,9 @@
+package test1;
+
+public class MyProfile {
+	String name;
+	int age;
+	double tall;
+	char gender;
+	boolean isPretty;
+}

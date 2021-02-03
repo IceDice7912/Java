@@ -1,0 +1,14 @@
+package test_encapsulation;
+
+public class MyProfile {
+	String name="전은수";
+	MyDate birthday=new MyDate();
+	
+	public void setYear()	{
+		birthday.setYear(1980);
+		birthday.month=10;
+		birthday.day=3;
+	}
+	
+	
+}

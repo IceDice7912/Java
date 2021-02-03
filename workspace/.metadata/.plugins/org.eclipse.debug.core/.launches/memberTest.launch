@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Basic_ch5/src/test/array/memberTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="test.array.memberTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="a b c d e f g 이건어쩔건데 ㅁㄴㅇㄹ ㄻ ㅂㄱ ㄷㄷ"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Basic_ch5"/>
+</launchConfiguration>

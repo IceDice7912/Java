@@ -1,0 +1,9 @@
+package test1;
+
+public class MyProfile {
+	String name = "전은수";
+	int age = 32;
+	double tall = 160.5;
+	char gender = '여';
+	boolean isPretty = true;
+}

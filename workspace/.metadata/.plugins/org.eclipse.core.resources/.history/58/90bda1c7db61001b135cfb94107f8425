@@ -1,0 +1,6 @@
+package test_encapsulation;
+
+public class MyDate {
+	private int year, month, day;
+
+}

@@ -1,0 +1,19 @@
+package test1;
+
+public class MyProfile
+{
+	String name;
+	int age;
+	double tall;
+	char gender;
+	boolean isPretty;
+	
+	public void setProfile(String name, int age, double tall, char gender, boolean isPretty)
+	{
+		name = name;
+		age = age;
+		tall = tall;
+		gender = gender;
+		isPretty = isPretty;
+	}
+}

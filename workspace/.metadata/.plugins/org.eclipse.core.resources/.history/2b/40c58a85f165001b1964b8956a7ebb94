@@ -1,0 +1,18 @@
+package my.fly;
+
+import javafx.scene.effect.Light.Distant;
+
+public class Airplane extends Vehicle {
+	
+	@Override
+	public int transfer(int start, int end) {
+		// TODO Auto-generated method stub
+		int distance = end - start;
+		return distance;
+	}
+	
+	public void flight () {
+		transfer(10, 1000);
+		System.out.println("날아간 거리 : "+ distance + "비행기는 엔진을 가동해서 난다.");
+	}
+}

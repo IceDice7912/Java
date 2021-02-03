@@ -1,0 +1,9 @@
+package test.shape;
+
+public class Printer {
+	
+	public void print(Object o) {
+		
+	}
+
+}

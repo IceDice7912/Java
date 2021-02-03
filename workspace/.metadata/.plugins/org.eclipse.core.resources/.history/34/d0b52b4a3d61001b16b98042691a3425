@@ -1,0 +1,10 @@
+package test.array;
+
+public class memberTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

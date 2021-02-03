@@ -1,0 +1,15 @@
+package test_encapsulation;
+
+public class MyDate {
+	private int year, month, day;
+
+	String setYear(int newyear) {
+		if(newyear>0 && newyear<2022) {
+			year=newyear;
+			return "정상 입력 되었습니다.";
+		}
+		else {
+			return "잘못된 연도입니다.";
+		}
+	}
+}

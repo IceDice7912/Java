@@ -1,0 +1,5 @@
+package test.inberitance;
+
+public class B extends A {
+	
+}
