@@ -1,10 +1,14 @@
 package test.shape;
 
-public class Shape {
-
+public abstract class Shape {
+	public abstract void area (); {
+}
+	
+class Polygon extends Shape{
+	
+	@Override
 	public void area() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("오각형의 넓이");
 	}
-
+}
 }
