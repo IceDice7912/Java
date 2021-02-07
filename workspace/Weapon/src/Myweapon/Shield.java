@@ -1,6 +1,6 @@
 package Myweapon;
 
-public class Shield implements Repair {
+public class Shield implements Equip {
 	
 	String type = "방패";
 	String data[]= {"합금", "플라스틱"};
@@ -12,18 +12,18 @@ public class Shield implements Repair {
 	}
 	
 	@Override
-	public void Dorepair() {
+	public void Equip() {
 		// TODO Auto-generated method stub
-		System.out.println("방패를 수리합니다.");
+		System.out.println("방패를 장착합니다.");
 	}
 	@Override
-	public void Donotrepair() {
+	public void UnEquip() {
 		// TODO Auto-generated method stub
-		System.out.println("방패를 수리하지 않습니다.");
+		System.out.println("방패를 장착하지 않습니다.");
 	}
 	@Override
-	public void Checkdurability(int durability) {
+	public void Power(int p) {
 		// TODO Auto-generated method stub
-		System.out.println("방패 내구도를 확인합니다 - 내구도 : " + durability);
+		System.out.println("방패 장착 후 전투력 : " + p);
 	}
 }
