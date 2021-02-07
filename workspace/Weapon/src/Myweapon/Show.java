@@ -13,6 +13,11 @@ public class Show {
 					}
 		System.out.println();
 		s.use();
+		Repair rps = null;
+		rps = new Sword();
+		rps.Dorepair();
+		rps.Donotrepair();
+		rps.Checkdurability(50);
 		
 		System.out.println();
 		
@@ -25,6 +30,11 @@ public class Show {
 					}
 		System.out.println();
 		g.use();
+		Repair rpg = null;
+		rpg = new Gun();
+		rpg.Dorepair();
+		rpg.Donotrepair();
+		rpg.Checkdurability(75);
 		
 		System.out.println();
 		
@@ -37,5 +47,12 @@ public class Show {
 					}
 		System.out.println();
 		sh.use();
+		Repair rpsh = null;
+		rpsh = new Sword();
+		rpsh.Dorepair();
+		rpsh.Donotrepair();
+		rpsh.Checkdurability(25);
+		
+		System.out.println();		
 	}
 }

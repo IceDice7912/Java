@@ -6,7 +6,7 @@ public interface Repair {
 	
 	public void Dorepair();
 	public void Donotrepair();
-	public void Setdurability(int durability);
+	public void Checkdurability(int durability);
 	
 	default void setwrap(boolean wrap) {
 		if(wrap) {
