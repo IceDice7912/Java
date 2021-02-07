@@ -1,6 +1,6 @@
 package Myweapon;
 
-public class Gun implements Equip {
+public class Gun extends Show implements Equip {
 
 	String type = "총";
 	String data[]= {"총알", "화약"};
