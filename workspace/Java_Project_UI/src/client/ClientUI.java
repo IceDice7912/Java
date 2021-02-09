@@ -3,6 +3,10 @@ package client;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class ClientUI {
 	TextArea ta;
@@ -19,7 +23,55 @@ public class ClientUI {
 		Panel p=new Panel();
 		Button b1=new Button("전송1");
 		 tf=new TextField(20);
-		 ta=new TextArea();			 
+		 ta=new TextArea();		
+		MenuBar mb=new MenuBar();
+		Menu file_menu=new Menu("파일");
+		Menu edit_menu=new Menu("편집");
+		MenuItem open_item=new MenuItem("열기");
+		MenuItem save_item=new MenuItem("저장");
+		
+		file_menu.add(open_item);
+		file_menu.add(save_item);
+		mb.add(file_menu);
+		mb.add(edit_menu);
+		f.setMenuBar(mb);
+		 
+		 
+		open_item.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent a) {
+				System.out.println("file open?");
+				FileDialog open=new FileDialog(f, "열기 창", FileDialog.LOAD );
+				open.setVisible(true);
+				
+				FileReader fr=null;
+				BufferedReader br=null;
+				try {			
+					 fr=new FileReader(open.getDirectory()+open.getFile());
+					 br=new BufferedReader(fr);
+					String oneLine="";
+					ta.setText("");
+					while((oneLine=br.readLine()) != null ) {
+						ta.append(oneLine+"\n");
+					}
+					
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}finally {
+					try {
+						if(br !=null ) br.close();
+						if(fr !=null ) fr.close();
+					}catch(IOException e) {
+						
+					}
+				}
+			}
+		});
 		 
 		f.addWindowListener(new WindowAdapter() {
 			@Override
@@ -29,15 +81,7 @@ public class ClientUI {
 		});
 		
 					
-		b1.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// 하고 싶은 일
-				chatMsg();
-			}
-			
-		});
+		b1.addActionListener(c -> chatMsg());
 		
 			
 		tf.addActionListener(new ActionListener() {
