@@ -6,6 +6,7 @@ import java.awt.event.*;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class ClientUI {
@@ -17,6 +18,7 @@ public class ClientUI {
 		ta.append(msg+"\n");
 		tf.setText("");
 	}
+	
 	
 	public void onCreate() {
 		Frame f=new Frame("나의 채팅");
@@ -44,6 +46,7 @@ public class ClientUI {
 				System.out.println("file open?");
 				FileDialog open=new FileDialog(f, "열기 창", FileDialog.LOAD );
 				open.setVisible(true);
+							
 				
 				FileReader fr=null;
 				BufferedReader br=null;
@@ -72,7 +75,42 @@ public class ClientUI {
 				}
 			}
 		});
-		 
+		
+		
+		save_item.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent a) {
+				System.out.println("file save?");
+				FileDialog save=new FileDialog(f, "저장 창", FileDialog.SAVE);
+				save.setVisible(true);	
+				
+				FileWriter fw = null;
+				try {
+					fw = new FileWriter(save.getDirectory()+save.getFile());
+					String msg = ta.getText();
+					fw.write(msg);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} finally {
+					if (fw != null) {
+						try {
+							fw.close();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+
+			}
+		});
+
+				
+				
+				
+				
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
