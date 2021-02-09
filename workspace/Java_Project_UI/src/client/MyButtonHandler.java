@@ -22,7 +22,12 @@ public class MyButtonHandler implements ActionListener{
 		this.ta = ta;
 	}
 	
-	public void setTextField(TextField tf) {
+	public void setTextField(TextArea ta,  TextField tf ) {
 		this.tf = tf;
+	}
+
+	public void setResource(TextArea ta2, TextField tf2) {
+		// TODO Auto-generated method stub
+		
 	}
 }
